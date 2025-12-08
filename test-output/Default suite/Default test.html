@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 08 20:11:27 IST 2025</td>
+<td>Started on:</td><td>Mon Dec 08 20:56:12 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41305 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34141 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,156 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: registerUser, Yes, org.testng.TestRunner@43ecfeb5</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)]&quot;}
-  (Session info: chrome=143.0.7499.40)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b2d8ebe140b9b3dc48530d39379920a, findElement {value=//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56309}, goog:processID: 25780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56309/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b2d8ebe140b9b3dc48530d39379920a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy31.click(Unknown Source)
-	at pages.FlipkartRegister.clickEmailBox(FlipkartRegister.java:64)
-	at tests.Test_FlipkartSite.registerUser(Test_FlipkartSite.java:574)
-	at tests.Test_FlipkartSite.executeTestCase(Test_FlipkartSite.java:173)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1524026401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1524026401'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)]&quot;}
-  (Session info: chrome=143.0.7499.40)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b2d8ebe140b9b3dc48530d39379920a, findElement {value=//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56309}, goog:processID: 25780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56309/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b2d8ebe140b9b3dc48530d39379920a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy31.click(Unknown Source)
-	at pages.FlipkartRegister.clickEmailBox(FlipkartRegister.java:64)
-	at tests.Test_FlipkartSite.registerUser(Test_FlipkartSite.java:574)
-	at tests.Test_FlipkartSite.executeTestCase(Test_FlipkartSite.java:173)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>16</td>
-<td>tests.Test_FlipkartSite@773f7880</td></tr>
-<tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkLogin, Yes, org.testng.TestRunner@43ecfeb5</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)]&quot;}
-  (Session info: chrome=143.0.7499.40)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b2d8ebe140b9b3dc48530d39379920a, findElement {value=//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56309}, goog:processID: 25780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56309/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b2d8ebe140b9b3dc48530d39379920a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy31.click(Unknown Source)
-	at pages.FlipkartLoginPage.clickEmailBox(FlipkartLoginPage.java:51)
-	at tests.Test_FlipkartSite.checkLogin(Test_FlipkartSite.java:608)
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkLogin, Yes, org.testng.TestRunner@2c604965</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[contains(@class,&apos;r4vIwl&apos;) or contains(@class,&apos;_2IX_2-&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.FlipkartLoginPage.clickPhoneInputBox(FlipkartLoginPage.java:43)
+	at tests.Test_FlipkartSite.checkLogin(Test_FlipkartSite.java:611)
 	at tests.Test_FlipkartSite.executeTestCase(Test_FlipkartSite.java:177)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -254,16 +110,15 @@ Session ID: 3b2d8ebe140b9b3dc48530d39379920a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1685470793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1685470793'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@class,&apos;r4vIwl&apos;) or contains(@class,&apos;_2IX_2-&apos;)]&quot;}
   (Session info: chrome=143.0.7499.40)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b2d8ebe140b9b3dc48530d39379920a, findElement {value=//input[@class=&apos;_18u87m _3WuvDp&apos;] | //input[contains(@class,&apos;_18u87m&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56309}, goog:processID: 25780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56309/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b2d8ebe140b9b3dc48530d39379920a
+Command: [7bd46e01c2d868ffd3fddfe999732f1f, findElement {value=//input[contains(@class,&apos;r4vIwl&apos;) or contains(@class,&apos;_2IX_2-&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51667}, goog:processID: 9844, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51667/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7bd46e01c2d868ffd3fddfe999732f1f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -279,11 +134,16 @@ Session ID: 3b2d8ebe140b9b3dc48530d39379920a
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy31.click(Unknown Source)
-	at pages.FlipkartLoginPage.clickEmailBox(FlipkartLoginPage.java:51)
-	at tests.Test_FlipkartSite.checkLogin(Test_FlipkartSite.java:608)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1831418259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1831418259'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[contains(@class,&apos;r4vIwl&apos;) or contains(@class,&apos;_2IX_2-&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.FlipkartLoginPage.clickPhoneInputBox(FlipkartLoginPage.java:43)
+	at tests.Test_FlipkartSite.checkLogin(Test_FlipkartSite.java:611)
 	at tests.Test_FlipkartSite.executeTestCase(Test_FlipkartSite.java:177)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -312,8 +172,36 @@ Session ID: 3b2d8ebe140b9b3dc48530d39379920a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@class,&apos;r4vIwl&apos;) or contains(@class,&apos;_2IX_2-&apos;)]&quot;}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7bd46e01c2d868ffd3fddfe999732f1f, findElement {value=//input[contains(@class,&apos;r4vIwl&apos;) or contains(@class,&apos;_2IX_2-&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51667}, goog:processID: 9844, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51667/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7bd46e01c2d868ffd3fddfe999732f1f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
 </pre></div></td>
-<td>10</td>
+<td>23</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -325,92 +213,97 @@ Session ID: 3b2d8ebe140b9b3dc48530d39379920a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkFurniture, No, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkOfferZone, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyBrandFilter, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: getFlipkartSite, Yes, org.testng.TestRunner@2c604965</td>
+<td></td>
+<td>2</td>
+<td>tests.Test_FlipkartSite@773f7880</td></tr>
+<tr>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyRatingFilter, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkProductImages, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkFlights, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyPriceFilter, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkMyCart, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkGrocerySection, No, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkMenApparel, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyBatteryCapacityFilter, No, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: sortProduct, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: getFlipkartSite, Yes, org.testng.TestRunner@43ecfeb5</td>
-<td></td>
-<td>3</td>
-<td>tests.Test_FlipkartSite@773f7880</td></tr>
-<tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkFlights, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkFurniture, No, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyRatingFilter, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: searchProduct, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkOfferZone, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: changingPinCode, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkMenApparel, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: registerUser, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: clickOnProduct, No, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyBatteryCapacityFilter, No, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: changingPinCode, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: clickOnProduct, No, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: placeOrder, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkProductImages, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: sortProduct, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: addToCart, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkMyCart, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: placeOrder, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: searchProduct, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: checkGrocerySection, No, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>
 <tr>
-<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: addToCart, Yes, org.testng.TestRunner@43ecfeb5</td>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyPriceFilter, Yes, org.testng.TestRunner@2c604965</td>
+<td></td>
+<td>0</td>
+<td>tests.Test_FlipkartSite@773f7880</td></tr>
+<tr>
+<td title='tests.Test_FlipkartSite.executeTestCase()'><b>executeTestCase</b><br>Test class: tests.Test_FlipkartSite<br>Parameters: applyBrandFilter, Yes, org.testng.TestRunner@2c604965</td>
 <td></td>
 <td>0</td>
 <td>tests.Test_FlipkartSite@773f7880</td></tr>

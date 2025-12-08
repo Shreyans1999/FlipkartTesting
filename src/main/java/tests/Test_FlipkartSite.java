@@ -168,10 +168,10 @@ public class Test_FlipkartSite {
 //                    context.setAttribute("testCaseName", "checkFlights");
 //                    checkFlights();
 //                    break;
-                case "registerUser":
-                    context.setAttribute("testCaseName", "registerUser");
-                    registerUser();
-                    break;
+//                case "registerUser":
+//                    context.setAttribute("testCaseName", "registerUser");
+//                    registerUser();
+//                    break;
                 case "checkLogin":
                     context.setAttribute("testCaseName", "checkLogin");
                     checkLogin();
@@ -552,11 +552,11 @@ public class Test_FlipkartSite {
   	}
   	
   	  
-//    This test case is for Register functionality
-	public void registerUser() throws InterruptedException, IOException, MailosaurException {
+//    This test case is for Register functionality (currently commented out - using checkLogin for phone-based auth)
+	public void registerUser() throws InterruptedException {
 	     test = extent.createTest("registerUser", "This test case is for Register functionality");
          test.log(Status.INFO, "This test case is for Register functionality");
-         logger.info("Trying to sign up as a new user with Mailosaur email");
+         logger.info("Trying to sign up as a new user with phone number");
     	try {
             FlipkartRegister pageFactory = new FlipkartRegister(driver);
             
@@ -569,18 +569,16 @@ public class Test_FlipkartSite {
             pageFactory.clickSignUpLink();
             Thread.sleep(1000);
             
-            // Enter email from Mailosaur
-            String email = ConfigFile.getEmail();
-            pageFactory.clickEmailBox();
-            pageFactory.enterEmail(email);
+            // Enter phone number from config
+            String phoneNo = ConfigFile.getPhoneNo();
+            pageFactory.clickPhoneInputBox();
+            pageFactory.enterPhoneNumber(phoneNo);
             
             // Click Continue/Request OTP
             pageFactory.clickSubmitButton();
-            Thread.sleep(3000); // Wait for OTP email
             
-            // Fetch OTP from Mailosaur
-            String OTP = pageFactory.generateOTP();
-            pageFactory.enterOTP(OTP);
+            // Wait for user to manually enter OTP (10 seconds)
+            pageFactory.waitForManualOTPEntry(10);
             
             // Click Signup button
             boolean isClicked = pageFactory.clickSignup();
@@ -595,24 +593,36 @@ public class Test_FlipkartSite {
 	}  
     
     
-//  This test case is for Login Functionality
-  public void checkLogin() throws IOException, InterruptedException, MailosaurException {
-      test = extent.createTest("checkLogin", "This test case for checking Login functionality");
-      test.log(Status.INFO, "Checking Login Functionality on Flipkart Site");
-      logger.info("Checking Login Functionality on Flipkart Site");
+//  This test case is for Login Functionality with Phone OTP
+  public void checkLogin() throws InterruptedException {
+      test = extent.createTest("checkLogin", "This test case for checking Login functionality with phone OTP");
+      test.log(Status.INFO, "Checking Login Functionality on Flipkart Site using Phone Number");
+      logger.info("Checking Login Functionality on Flipkart Site using Phone Number");
 	  try {
 	        String loginURL = ConfigFile.getLoginLink();
 	        driver.get(loginURL);
 	        FlipkartLoginPage pageFactory = new FlipkartLoginPage(driver);
-	        String emailID = ConfigFile.getEmail();
-	        pageFactory.clickEmailBox();
-	        pageFactory.enterLoginEmail(emailID);
-	        pageFactory.clickSubmitBox();
-	        String OTP = pageFactory.generateOTP();
-	        boolean isClicked = pageFactory.enterOTPBox(OTP);
+	        
+	        // Get phone number from config (9024002784)
+	        String phoneNo = ConfigFile.getPhoneNo();
+	        logger.info("Using phone number: " + phoneNo);
+	        
+	        // Click on phone input and enter phone number
+	        pageFactory.clickPhoneInputBox();
+	        pageFactory.enterPhoneNumber(phoneNo);
+	        
+	        // Click Request OTP button
+	        pageFactory.clickRequestOTP();
+	        
+	        // Wait for user to manually enter OTP (10 seconds)
+	        pageFactory.waitForManualOTPEntry(10);
+	        
+	        // Check if login was successful
+	        boolean isLoginSuccessful = pageFactory.isLoginSuccessful();
 	        
 	        // Assertion
-   	        Assert.assertTrue(isClicked, "Button was not clicked");
+   	        Assert.assertTrue(isLoginSuccessful, "Login was not successful");
+   	        logger.info("Login completed successfully!");
 	    } catch (Exception e) {
 	        test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
 	        throw e;

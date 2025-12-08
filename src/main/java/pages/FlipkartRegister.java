@@ -1,9 +1,6 @@
 package pages;
 
-import java.io.IOException;
 import java.time.Duration;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,22 +11,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.mailosaur.MailosaurClient;
-import com.mailosaur.MailosaurException;
-import com.mailosaur.models.Message;
-import com.mailosaur.models.MessageSearchParams;
-import com.mailosaur.models.SearchCriteria;
-
 import reports.ReadConfigFile;
 
+/**
+ * FlipkartRegister page - Simplified version for phone-based registration
+ * Note: Currently registration flow is similar to login flow on Flipkart
+ * The main checkLogin() test handles the login/registration via phone OTP
+ */
 public class FlipkartRegister {
-	WebElement element = null;
 	WebDriver driver = null;
 	ReadConfigFile ConfigFile = new ReadConfigFile();
-	String API_KEY = ConfigFile.getAPI_KEY();
-    String serverID = ConfigFile.getServerID();
-    String from = "noreply@ncb.flipkart.com";
-    private WebDriverWait wait;
+	private WebDriverWait wait;
 	
 	public FlipkartRegister(WebDriver driver) {
 		this.driver = driver;
@@ -40,9 +32,9 @@ public class FlipkartRegister {
 	@FindBy(xpath="//a[contains(text(),'Login')] | //span[text()='Login']")
 	public WebElement loginLink;
 
-	// Multiple fallback locators for the email/phone input field
-	@FindBy(xpath="//input[contains(@class,'_18u87m')] | //input[contains(@class,'_2IX_2-')] | //form//input[@type='text']")
-	public WebElement emailOrPhone_Box;
+	// Locator for phone/email input field
+	@FindBy(xpath="//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")
+	public WebElement phoneInputBox;
 	
 	@FindBy(xpath="//a[contains(text(),'New to Flipkart')] | //span[contains(text(),'New to Flipkart')]")
 	public WebElement signUpLink;
@@ -68,21 +60,19 @@ public class FlipkartRegister {
 		signUpLink.click();
 	}
 	
-	public void clickEmailBox() throws InterruptedException {
-		// Wait for the input field to be visible and clickable
-		Thread.sleep(2000); // Extra wait for page stability
+	public void clickPhoneInputBox() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement inputField = wait.until(ExpectedConditions.presenceOfElementLocated(
-			By.xpath("//input[contains(@class,'_18u87m')] | //input[contains(@class,'_2IX_2-')] | //form//input[@type='text']")));
+			By.xpath("//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")));
 		wait.until(ExpectedConditions.elementToBeClickable(inputField));
 		inputField.click();
 	}
 	
-	public void enterEmail(String email) throws InterruptedException {
-		// Find and enter email with explicit wait
+	public void enterPhoneNumber(String phoneNumber) throws InterruptedException {
 		WebElement inputField = wait.until(ExpectedConditions.presenceOfElementLocated(
-			By.xpath("//input[contains(@class,'_18u87m')] | //input[contains(@class,'_2IX_2-')] | //form//input[@type='text']")));
+			By.xpath("//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")));
 		inputField.clear();
-		inputField.sendKeys(email);
+		inputField.sendKeys(phoneNumber);
 	}
 	
 	public void clickSubmitButton() {
@@ -90,54 +80,26 @@ public class FlipkartRegister {
 		submitButton.click();
 	}
 	
-	public void enterOTP(String otp) {
-		wait.until(ExpectedConditions.visibilityOf(OTP_Box));
-		OTP_Box.sendKeys(otp);
+	/**
+	 * Wait for user to manually enter OTP received on phone
+	 */
+	public void waitForManualOTPEntry(int seconds) throws InterruptedException {
+		System.out.println("===========================================");
+		System.out.println("WAITING FOR MANUAL OTP ENTRY...");
+		System.out.println("Please enter the OTP received on your phone within " + seconds + " seconds");
+		System.out.println("===========================================");
+		Thread.sleep(seconds * 1000);
 	}
 	
 	public boolean clickSignup() {
-		wait.until(ExpectedConditions.elementToBeClickable(signupButton));
-		signupButton.click();
-		return true;
-	}
-	
-	// Method to read OTP from Email Inbox using Mailosaur
-	public String generateOTP() throws IOException, MailosaurException {
-        String serverDomain = ConfigFile.getServerDomain();
-        System.out.println("Fetching OTP from Mailosaur: " + serverDomain);
-		MailosaurClient mailosaur = new MailosaurClient(API_KEY);
-        
-        MessageSearchParams params = new MessageSearchParams();
-        params.withServer(serverID);
-        
-        SearchCriteria criteria = new SearchCriteria();
-        String emailID = ConfigFile.getEmail();
-        criteria.withSentTo(emailID);
-        criteria.withSentFrom(from);
-        
-        Message message = mailosaur.messages().get(params, criteria);
-        String subject = message.subject();
-        System.out.println("Email Subject: " + subject);
-        
-        // Get OTP from subject - looking for 6 digit OTP
-        Pattern pattern = Pattern.compile("([0-9]{6})");
-        Matcher matcher = pattern.matcher(subject);
-        
-        if (matcher.find()) {
-            String OTP = matcher.group(1);
-            System.out.println("OTP Found: " + OTP);
-            return OTP;
-        }
-        
-        // If not in subject, try message body
-        String body = message.text().body();
-        matcher = pattern.matcher(body);
-        if (matcher.find()) {
-            String OTP = matcher.group(1);
-            System.out.println("OTP Found in body: " + OTP);
-            return OTP;
-        }
-        
-        throw new RuntimeException("OTP not found in email");
+		try {
+			wait.until(ExpectedConditions.elementToBeClickable(signupButton));
+			signupButton.click();
+			return true;
+		} catch (Exception e) {
+			System.out.println("Signup button not found or not clickable: " + e.getMessage());
+			return false;
+		}
 	}
 }
+
