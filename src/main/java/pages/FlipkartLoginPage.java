@@ -34,13 +34,13 @@ public class FlipkartLoginPage {
 	@FindBy(xpath="(//a[@title=\"Login\"])[1]")
 	public WebElement loginBtn;
 	
-	@FindBy(xpath="//input[@class=\"r4vIwl BV+Dqf\"]")
+	@FindBy(xpath="//input[contains(@class,'c3Bd2c') or contains(@class,'yXUQVt')] | //input[@type='text' and ancestor::form]")
 	public WebElement email_TextBox;
 	
-	@FindBy(xpath="//button[@class=\"QqFHMw twnTnD _7Pd1Fp\"]")
+	@FindBy(xpath="//button[contains(text(),'Request OTP') or contains(text(),'CONTINUE') or contains(text(),'Continue')]")
 	public WebElement requestOTP_Btn;
 
-	@FindBy(xpath="//div[@class=\"XDRRi5\"]")
+	@FindBy(xpath="//input[@type='text' and contains(@class,'otp')] | //input[contains(@placeholder,'OTP')]")
 	public WebElement OTP_Box;
 	
 	public String getRandomEmail() {

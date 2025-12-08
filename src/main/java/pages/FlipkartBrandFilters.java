@@ -24,7 +24,7 @@ public class FlipkartBrandFilters {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//div[text()='SAMSUNG']/preceding-sibling::div")
+	@FindBy(xpath = "//div[contains(text(),'Samsung') or contains(text(),'SAMSUNG')]/ancestor::label//input | //div[contains(text(),'Samsung') or contains(text(),'SAMSUNG')]")
     private WebElement samsungCheckbox;
 
    

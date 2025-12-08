@@ -16,7 +16,7 @@ public class FlipkartPriceFilters {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//div[@class='tKgS7w']//select[@class='Gn+jFg']")
+	@FindBy(xpath = "(//select[contains(@class,'hbnjE2') or contains(@class,'Gn+jFg')])[1] | (//div[contains(text(),'Min')]/following-sibling::select)[1]")
     private WebElement dropdown;
    
 	

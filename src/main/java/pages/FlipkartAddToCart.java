@@ -20,10 +20,10 @@ public class FlipkartAddToCart {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//button[text()=\"Add to cart\"]")
+	@FindBy(xpath="//button[contains(text(),'Add to cart') or contains(text(),'ADD TO CART')]")
 	public WebElement addToCartButton;
 	
-	@FindBy(xpath="//button[@class=\"QqFHMw vslbG+ In9uk2\"]")
+	@FindBy(xpath="//a[contains(@href,'/viewcart')] | //button[contains(text(),'Go to cart')]")
 	public WebElement goToCartButton;
 
 	

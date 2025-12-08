@@ -18,7 +18,7 @@ public class FlipkartRegister {
 	@FindBy(xpath="//a[text()=\"Login\"]")
 	public WebElement loginLink;
 
-	@FindBy(xpath="//input[@class=\"r4vIwl BV+Dqf\"]")
+	@FindBy(xpath="//input[contains(@class,'c3Bd2c') or contains(@class,'yXUQVt')] | //input[@type='text' and ancestor::form]")
 	public WebElement phoneNo_Box;
 	
 	@FindBy(xpath="//div[text()=\"Sign Up\"]")

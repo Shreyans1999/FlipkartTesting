@@ -19,7 +19,7 @@ public class FlipkartCheckProductImages {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(className="ZqtVYK")
+    @FindBy(xpath="//div[contains(@class,'_4WELSP') or contains(@class,'_3nMexc')] | //ul[contains(@class,'thumb')]")
     public WebElement imageContainer;
 
     public boolean iterateOverImages() throws InterruptedException {

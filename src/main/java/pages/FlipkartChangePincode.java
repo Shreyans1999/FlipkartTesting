@@ -26,7 +26,7 @@ public class FlipkartChangePincode {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//div[@class='hVvnXm']")
+	@FindBy(xpath="//div[contains(text(),'Delivery') or contains(text(),'Usually delivered')] | //span[contains(text(),'Delivery')]")
 	public WebElement expectedText;
 	
 	

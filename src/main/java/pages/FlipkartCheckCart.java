@@ -18,7 +18,7 @@ public class FlipkartCheckCart {
 	@FindBy(xpath="(//span[text()=\"New Delhi - 110010\"])")
 	private WebElement heading;
 	
-	@FindBy(xpath = "//a[@href=\"/viewcart?exploreMode=true&preference=GROCERY\"][1]")
+	@FindBy(xpath = "//a[contains(@href,'/viewcart')] | //span[text()='Cart']/parent::a")
     private WebElement cartButton;
 	
 	public void clickCartButton() {

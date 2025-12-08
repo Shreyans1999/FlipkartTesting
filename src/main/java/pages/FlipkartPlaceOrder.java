@@ -15,7 +15,7 @@ public class FlipkartPlaceOrder {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//span[text()=\"Place Order\"]")
+	@FindBy(xpath="//button[contains(text(),'Place Order') or contains(text(),'Buy Now') or contains(text(),'PLACE ORDER')]")
 	public WebElement orderButton;
 	
 	@FindBy(xpath="//input[@type=\"text\"]")
