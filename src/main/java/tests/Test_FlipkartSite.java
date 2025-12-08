@@ -614,8 +614,8 @@ public class Test_FlipkartSite {
 	        // Click Request OTP button
 	        pageFactory.clickRequestOTP();
 	        
-	        // Wait for user to manually enter OTP (10 seconds)
-	        pageFactory.waitForManualOTPEntry(10);
+	        // Wait for user to manually enter OTP (15 seconds)
+	        pageFactory.waitForManualOTPEntry(15);
 	        
 	        // Check if login was successful
 	        boolean isLoginSuccessful = pageFactory.isLoginSuccessful();

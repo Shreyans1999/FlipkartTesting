@@ -28,7 +28,7 @@ public class FlipkartLoginPage {
 	public WebElement loginBtn;
 	
 	// Locator for the phone/email input field in login form
-	@FindBy(xpath="//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")
+	@FindBy(xpath="//input[contains(@class,'c3Bd2c') and contains(@class,'yXUQVt')]")
 	public WebElement phoneInputBox;
 	
 	@FindBy(xpath="//button[contains(text(),'Request OTP') or contains(text(),'CONTINUE') or contains(text(),'Continue')]")
@@ -41,7 +41,7 @@ public class FlipkartLoginPage {
 		// Wait for the input field to be visible and clickable
 		Thread.sleep(2000); // Extra wait for page stability
 		WebElement inputField = wait.until(ExpectedConditions.presenceOfElementLocated(
-			By.xpath("//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")));
+			By.xpath("//input[contains(@class,'c3Bd2c') and contains(@class,'yXUQVt')]")));
 		wait.until(ExpectedConditions.elementToBeClickable(inputField));
 		inputField.click();
 	}
@@ -49,7 +49,7 @@ public class FlipkartLoginPage {
 	public void enterPhoneNumber(String phoneNumber) throws InterruptedException {
 		// Find and enter phone number with explicit wait
 		WebElement inputField = wait.until(ExpectedConditions.presenceOfElementLocated(
-			By.xpath("//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")));
+			By.xpath("//input[contains(@class,'c3Bd2c') and contains(@class,'yXUQVt')]")));
 		inputField.clear();
 		inputField.sendKeys(phoneNumber);
 	}

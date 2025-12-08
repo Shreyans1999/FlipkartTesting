@@ -33,7 +33,7 @@ public class FlipkartRegister {
 	public WebElement loginLink;
 
 	// Locator for phone/email input field
-	@FindBy(xpath="//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")
+	@FindBy(xpath="//input[contains(@class,'c3Bd2c') and contains(@class,'yXUQVt')]")
 	public WebElement phoneInputBox;
 	
 	@FindBy(xpath="//a[contains(text(),'New to Flipkart')] | //span[contains(text(),'New to Flipkart')]")
@@ -63,14 +63,14 @@ public class FlipkartRegister {
 	public void clickPhoneInputBox() throws InterruptedException {
 		Thread.sleep(2000);
 		WebElement inputField = wait.until(ExpectedConditions.presenceOfElementLocated(
-			By.xpath("//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")));
+			By.xpath("//input[contains(@class,'c3Bd2c') and contains(@class,'yXUQVt')]")));
 		wait.until(ExpectedConditions.elementToBeClickable(inputField));
 		inputField.click();
 	}
 	
 	public void enterPhoneNumber(String phoneNumber) throws InterruptedException {
 		WebElement inputField = wait.until(ExpectedConditions.presenceOfElementLocated(
-			By.xpath("//input[contains(@class,'r4vIwl') or contains(@class,'_2IX_2-')]")));
+			By.xpath("//input[contains(@class,'c3Bd2c') and contains(@class,'yXUQVt')]")));
 		inputField.clear();
 		inputField.sendKeys(phoneNumber);
 	}
