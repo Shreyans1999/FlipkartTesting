@@ -21,7 +21,7 @@ public class FlipkartSearchBox {
 	@FindBy(xpath="//button[@type=\"submit\"]")
 	public WebElement searchButton;
 	
-	@FindBy(xpath="//div[text()=\"Apple iPhone 15 Pro Max (Natural Titanium, 256 GB)\"]")
+	@FindBy(xpath="//div[contains(text(),'Apple iPhone 17 Pro')]")
 	public WebElement productLink;
 	
 	
