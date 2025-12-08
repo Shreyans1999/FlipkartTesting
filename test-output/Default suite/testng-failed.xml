@@ -8,7 +8,7 @@
           <include name="getTestResult"/>
           <include name="initializeDriver"/>
           <include name="tearDownTest"/>
-          <include name="executeTestCase" invocation-numbers="16 18 3 19 4 5 6 8 9 12"/>
+          <include name="executeTestCase" invocation-numbers="16 18 3 19 4 5 6 8 9"/>
         </methods>
       </class> <!-- tests.Test_FlipkartSite -->
     </classes>

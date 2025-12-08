@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="10" failed="10" skipped="0">
+<testng-results ignored="0" total="20" passed="11" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-08T12:26:33 IST" name="Default suite" finished-at="2025-12-08T12:29:33 IST" duration-ms="179899">
+  <suite started-at="2025-12-08T18:50:30 IST" name="Default suite" finished-at="2025-12-08T18:53:10 IST" duration-ms="159620">
     <groups>
     </groups>
-    <test started-at="2025-12-08T12:26:33 IST" name="Default test" finished-at="2025-12-08T12:29:33 IST" duration-ms="179899">
+    <test started-at="2025-12-08T18:50:30 IST" name="Default test" finished-at="2025-12-08T18:53:10 IST" duration-ms="159620">
       <class name="tests.Test_FlipkartSite">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:33 IST" name="initializeDriver" finished-at="2025-12-08T12:26:42 IST" duration-ms="8461" status="PASS">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:30 IST" name="initializeDriver" finished-at="2025-12-08T18:50:35 IST" duration-ms="4815" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:43 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:26:46 IST" duration-ms="3172" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:36 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:50:40 IST" duration-ms="4309" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,14 +32,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:46 IST" name="getTestResult" finished-at="2025-12-08T12:26:46 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:40 IST" name="getTestResult" finished-at="2025-12-08T18:50:40 IST" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,14 +48,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:46 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:26:46 IST" duration-ms="5" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:40 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:50:40 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,14 +69,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:46 IST" name="getTestResult" finished-at="2025-12-08T12:26:46 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:40 IST" name="getTestResult" finished-at="2025-12-08T18:50:40 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,14 +85,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:46 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:26:52 IST" duration-ms="5866" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:40 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:50:46 IST" duration-ms="5869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,14 +106,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:52 IST" name="getTestResult" finished-at="2025-12-08T12:26:52 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:46 IST" name="getTestResult" finished-at="2025-12-08T18:50:46 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,14 +122,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:26:52 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:27:14 IST" duration-ms="21986" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:46 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:50:59 IST" duration-ms="12853" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -143,20 +143,52 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id="pincodeInputId"]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='hVvnXm']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//div[@class='hVvnXm'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id="pincodeInputId"]' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.FlipkartChangePincode.enterPincode(FlipkartChangePincode.java:39)
-at tests.Test_FlipkartSite.changingPinCode(Test_FlipkartSite.java:253)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='hVvnXm']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//div[@class='hVvnXm'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy31.getText(Unknown Source)
+at pages.FlipkartChangePincode.getExpectedText(FlipkartChangePincode.java:46)
+at tests.Test_FlipkartSite.changingPinCode(Test_FlipkartSite.java:257)
 at tests.Test_FlipkartSite.executeTestCase(Test_FlipkartSite.java:113)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -186,47 +218,13 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id="pincodeInputId"]"}
-  (Session info: chrome=143.0.7499.40)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//input[@id="pincodeInputId"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy31.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:14 IST" name="getTestResult" finished-at="2025-12-08T12:27:14 IST" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:59 IST" name="getTestResult" finished-at="2025-12-08T18:50:59 IST" duration-ms="273" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -235,14 +233,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:14 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:27:26 IST" duration-ms="11530" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:50:59 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:51:11 IST" duration-ms="11527" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -256,7 +254,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -268,9 +266,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=ZqtVYK, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4]]>
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=ZqtVYK, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ZqtVYK"}
@@ -279,9 +277,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=ZqtVYK, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=ZqtVYK, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -337,7 +335,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:26 IST" name="getTestResult" finished-at="2025-12-08T12:27:26 IST" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:11 IST" name="getTestResult" finished-at="2025-12-08T18:51:11 IST" duration-ms="221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -346,14 +344,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:26 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:27:46 IST" duration-ms="20197" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:11 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:51:31 IST" duration-ms="20153" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -367,7 +365,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -416,9 +414,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//button[text()="Add to cart"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//button[text()="Add to cart"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -450,7 +448,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:46 IST" name="getTestResult" finished-at="2025-12-08T12:27:47 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:31 IST" name="getTestResult" finished-at="2025-12-08T18:51:31 IST" duration-ms="193" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -459,14 +457,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:47 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:27:57 IST" duration-ms="10036" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:31 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:51:41 IST" duration-ms="10045" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -480,7 +478,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -492,9 +490,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//span[text()="Place Order"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4]]>
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//span[text()="Place Order"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Place Order"]"}
@@ -503,9 +501,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//span[text()="Place Order"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//span[text()="Place Order"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -561,7 +559,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:57 IST" name="getTestResult" finished-at="2025-12-08T12:27:57 IST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:41 IST" name="getTestResult" finished-at="2025-12-08T18:51:42 IST" duration-ms="203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -570,14 +568,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:27:57 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:00 IST" duration-ms="3197" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:42 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:51:45 IST" duration-ms="3352" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -591,14 +589,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:00 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:10 IST" duration-ms="10072" status="FAIL">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:45 IST" name="getTestResult" finished-at="2025-12-08T18:51:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=executeTestCase status=SUCCESS method=Test_FlipkartSite.executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResult -->
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:45 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:51:55 IST" duration-ms="10036" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -612,7 +626,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -624,9 +638,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//div[@class='tKgS7w']//select[@class='Gn+jFg'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4]]>
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//div[@class='tKgS7w']//select[@class='Gn+jFg'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='tKgS7w']//select[@class='Gn+jFg']"}
@@ -635,9 +649,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//div[@class='tKgS7w']//select[@class='Gn+jFg'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//div[@class='tKgS7w']//select[@class='Gn+jFg'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -694,23 +708,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:00 IST" name="getTestResult" finished-at="2025-12-08T12:28:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=executeTestCase status=SUCCESS method=Test_FlipkartSite.executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTestResult -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:10 IST" name="getTestResult" finished-at="2025-12-08T12:28:10 IST" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:55 IST" name="getTestResult" finished-at="2025-12-08T18:51:55 IST" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -719,14 +717,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:10 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:31 IST" duration-ms="20075" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:51:55 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:15 IST" duration-ms="20100" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -740,7 +738,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -789,9 +787,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//div[text()='SAMSUNG']/preceding-sibling::div, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//div[text()='SAMSUNG']/preceding-sibling::div, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -823,7 +821,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:31 IST" name="getTestResult" finished-at="2025-12-08T12:28:31 IST" duration-ms="294" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:15 IST" name="getTestResult" finished-at="2025-12-08T18:52:15 IST" duration-ms="164" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -832,14 +830,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:31 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:31 IST" duration-ms="7" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:15 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -853,30 +851,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:31 IST" name="getTestResult" finished-at="2025-12-08T12:28:31 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=executeTestCase status=SUCCESS method=Test_FlipkartSite.executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:31 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:31 IST" duration-ms="0" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:15 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -890,14 +872,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:31 IST" name="getTestResult" finished-at="2025-12-08T12:28:31 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:15 IST" name="getTestResult" finished-at="2025-12-08T18:52:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -906,14 +888,30 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:31 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:41 IST" duration-ms="10283" status="FAIL">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:15 IST" name="getTestResult" finished-at="2025-12-08T18:52:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=executeTestCase status=SUCCESS method=Test_FlipkartSite.executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResult -->
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:15 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:18 IST" duration-ms="2665" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -927,104 +925,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="Jackets"]"}
-  (Session info: chrome=143.0.7499.40)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//a[@title="Jackets"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="Jackets"]"}
-  (Session info: chrome=143.0.7499.40)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//a[@title="Jackets"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy31.click(Unknown Source)
-at pages.FlipkartMenApparel.handleMenApparelAction(FlipkartMenApparel.java:31)
-at tests.Test_FlipkartSite.checkMenApparel(Test_FlipkartSite.java:426)
-at tests.Test_FlipkartSite.executeTestCase(Test_FlipkartSite.java:149)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:41 IST" name="getTestResult" finished-at="2025-12-08T12:28:41 IST" duration-ms="140" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=executeTestCase status=FAILURE method=Test_FlipkartSite.executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:41 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:41 IST" duration-ms="0" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:18 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:18 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1038,14 +946,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:41 IST" name="getTestResult" finished-at="2025-12-08T12:28:41 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:18 IST" name="getTestResult" finished-at="2025-12-08T18:52:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1054,14 +962,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:41 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:44 IST" duration-ms="3139" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:18 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:21 IST" duration-ms="3023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1075,14 +983,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:44 IST" name="getTestResult" finished-at="2025-12-08T12:28:44 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:18 IST" name="getTestResult" finished-at="2025-12-08T18:52:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1091,14 +999,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:44 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:44 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:21 IST" name="getTestResult" finished-at="2025-12-08T18:52:21 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=executeTestCase status=SUCCESS method=Test_FlipkartSite.executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResult -->
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:21 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1112,14 +1036,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:44 IST" name="getTestResult" finished-at="2025-12-08T12:28:44 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:21 IST" name="getTestResult" finished-at="2025-12-08T18:52:21 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1128,14 +1052,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:44 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:28:54 IST" duration-ms="10024" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:21 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:31 IST" duration-ms="10076" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1149,7 +1073,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -1161,9 +1085,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//a[@href="/viewcart?exploreMode=true&preference=GROCERY"][1], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4]]>
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//a[@href="/viewcart?exploreMode=true&preference=GROCERY"][1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href="/viewcart?exploreMode=true&preference=GROCERY"][1]"}
@@ -1172,9 +1096,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//a[@href="/viewcart?exploreMode=true&preference=GROCERY"][1], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//a[@href="/viewcart?exploreMode=true&preference=GROCERY"][1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1229,7 +1153,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:54 IST" name="getTestResult" finished-at="2025-12-08T12:28:55 IST" duration-ms="322" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:31 IST" name="getTestResult" finished-at="2025-12-08T18:52:32 IST" duration-ms="264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1238,14 +1162,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:28:55 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:29:08 IST" duration-ms="13071" status="PASS">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:32 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:44 IST" duration-ms="12667" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1259,14 +1183,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:29:08 IST" name="getTestResult" finished-at="2025-12-08T12:29:08 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:44 IST" name="getTestResult" finished-at="2025-12-08T18:52:44 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1275,14 +1199,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:29:08 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:29:20 IST" duration-ms="11972" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:44 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:52:56 IST" duration-ms="11985" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1296,7 +1220,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -1308,9 +1232,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4]]>
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="r4vIwl BV+Dqf"]"}
@@ -1319,9 +1243,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1376,7 +1300,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:29:20 IST" name="getTestResult" finished-at="2025-12-08T12:29:20 IST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:56 IST" name="getTestResult" finished-at="2025-12-08T18:52:56 IST" duration-ms="174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1385,14 +1309,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:29:20 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T12:29:31 IST" duration-ms="10538" status="FAIL">
+        <test-method signature="executeTestCase(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:52:56 IST" name="executeTestCase" data-provider="testData" finished-at="2025-12-08T18:53:07 IST" duration-ms="10500" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1406,7 +1330,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
@@ -1418,9 +1342,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4]]>
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="r4vIwl BV+Dqf"]"}
@@ -1429,9 +1353,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9ba4c1e8135cbb2852da08e185f7be4, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, goog:processID: 17272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9ba4c1e8135cbb2852da08e185f7be4
+Command: [4d58331a2ebb11c15f8c691450ccb712, findElement {value=//input[@class="r4vIwl BV+Dqf"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\SSAKLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53422}, goog:processID: 25696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53422/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d58331a2ebb11c15f8c691450ccb712
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1486,7 +1410,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:29:31 IST" name="getTestResult" finished-at="2025-12-08T12:29:31 IST" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:53:07 IST" name="getTestResult" finished-at="2025-12-08T18:53:07 IST" duration-ms="177" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1495,14 +1419,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c604965]]>
+                <![CDATA[org.testng.TestRunner@377874b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestResult -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T12:29:31 IST" name="tearDownTest" finished-at="2025-12-08T12:29:33 IST" duration-ms="2405" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.Test_FlipkartSite@773f7880]" started-at="2025-12-08T18:53:07 IST" name="tearDownTest" finished-at="2025-12-08T18:53:10 IST" duration-ms="2466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
