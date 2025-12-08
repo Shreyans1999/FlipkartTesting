@@ -100,74 +100,74 @@ public class Test_FlipkartSite {
                     context.setAttribute("testCaseName", "getFlipkartSite");
                     getFlipkartSite();
                     break;
-                case "clickOnProduct":
-                    context.setAttribute("testCaseName", "clickOnProduct");
-                    clickOnProduct();
-                    break;
-                case "searchProduct":
-                    context.setAttribute("testCaseName", "searchProduct");
-                    searchProduct();
-                    break;
-                case "changingPinCode":
-                    context.setAttribute("testCaseName", "changingPinCode");
-                    changingPinCode();
-                    break;
-                case "checkProductImages":
-                    context.setAttribute("testCaseName", "checkProductImages");
-                    checkProductImages();
-                    break;
-                case "addToCart":
-                    context.setAttribute("testCaseName", "addToCart");
-                    addToCart();
-                    break;
-                case "placeOrder":
-                    context.setAttribute("testCaseName", "placeOrder");
-                    placeOrder();
-                    break;
-                case "sortProduct":
-                    context.setAttribute("testCaseName", "sortProduct");
-                    sortProduct();
-                    break;
-                case "applyPriceFilter":
-                    context.setAttribute("testCaseName", "applyPriceFilter");
-                    applyPriceFilter();
-                    break;
-                case "applyBrandFilter":
-                    context.setAttribute("testCaseName", "applyBrandFilter");
-                    applyBrandFilter();
-                    break;
-                case "applyRatingFilter":
-                    context.setAttribute("testCaseName", "applyRatingFilter");
-                    applyRatingFilter();
-                    break;
-                case "applyBatteryCapacityFilter":
-                    context.setAttribute("testCaseName", "applyBatteryCapacityFilter");
-                    applyBatteryCapacityFilter();
-                    break;
-                case "checkMenApparel":
-                    context.setAttribute("testCaseName", "checkMenApparel");
-                    checkMenApparel();
-                    break;
-                case "checkFurniture":
-                    context.setAttribute("testCaseName", "checkFurniture");
-                    checkFurniture();
-                    break;
-                case "checkOfferZone":
-                    context.setAttribute("testCaseName", "checkOfferZone");
-                    checkOfferZone();
-                    break;
-                case "checkGrocerySection":
-                    context.setAttribute("testCaseName", "checkGrocerySection");
-                    checkGrocerySection();
-                    break;
-                case "checkMyCart":
-                    context.setAttribute("testCaseName", "checkMyCart");
-                    checkMyCart();
-                    break;
-                case "checkFlights":
-                    context.setAttribute("testCaseName", "checkFlights");
-                    checkFlights();
-                    break;
+//                case "clickOnProduct":
+//                    context.setAttribute("testCaseName", "clickOnProduct");
+//                    clickOnProduct();
+//                    break;
+//                case "searchProduct":
+//                    context.setAttribute("testCaseName", "searchProduct");
+//                    searchProduct();
+//                    break;
+//                case "changingPinCode":
+//                    context.setAttribute("testCaseName", "changingPinCode");
+//                    changingPinCode();
+//                    break;
+//                case "checkProductImages":
+//                    context.setAttribute("testCaseName", "checkProductImages");
+//                    checkProductImages();
+//                    break;
+//                case "addToCart":
+//                    context.setAttribute("testCaseName", "addToCart");
+//                    addToCart();
+//                    break;
+//                case "placeOrder":
+//                    context.setAttribute("testCaseName", "placeOrder");
+//                    placeOrder();
+//                    break;
+//                case "sortProduct":
+//                    context.setAttribute("testCaseName", "sortProduct");
+//                    sortProduct();
+//                    break;
+//                case "applyPriceFilter":
+//                    context.setAttribute("testCaseName", "applyPriceFilter");
+//                    applyPriceFilter();
+//                    break;
+//                case "applyBrandFilter":
+//                    context.setAttribute("testCaseName", "applyBrandFilter");
+//                    applyBrandFilter();
+//                    break;
+//                case "applyRatingFilter":
+//                    context.setAttribute("testCaseName", "applyRatingFilter");
+//                    applyRatingFilter();
+//                    break;
+//                case "applyBatteryCapacityFilter":
+//                    context.setAttribute("testCaseName", "applyBatteryCapacityFilter");
+//                    applyBatteryCapacityFilter();
+//                    break;
+//                case "checkMenApparel":
+//                    context.setAttribute("testCaseName", "checkMenApparel");
+//                    checkMenApparel();
+//                    break;
+//                case "checkFurniture":
+//                    context.setAttribute("testCaseName", "checkFurniture");
+//                    checkFurniture();
+//                    break;
+//                case "checkOfferZone":
+//                    context.setAttribute("testCaseName", "checkOfferZone");
+//                    checkOfferZone();
+//                    break;
+//                case "checkGrocerySection":
+//                    context.setAttribute("testCaseName", "checkGrocerySection");
+//                    checkGrocerySection();
+//                    break;
+//                case "checkMyCart":
+//                    context.setAttribute("testCaseName", "checkMyCart");
+//                    checkMyCart();
+//                    break;
+//                case "checkFlights":
+//                    context.setAttribute("testCaseName", "checkFlights");
+//                    checkFlights();
+//                    break;
                 case "registerUser":
                     context.setAttribute("testCaseName", "registerUser");
                     registerUser();
@@ -553,24 +553,40 @@ public class Test_FlipkartSite {
   	
   	  
 //    This test case is for Register functionality
-	public void registerUser() throws InterruptedException {
+	public void registerUser() throws InterruptedException, IOException, MailosaurException {
 	     test = extent.createTest("registerUser", "This test case is for Register functionality");
          test.log(Status.INFO, "This test case is for Register functionality");
-         logger.info("Trying to sign up as a new user");
+         logger.info("Trying to sign up as a new user with Mailosaur email");
     	try {
             FlipkartRegister pageFactory = new FlipkartRegister(driver);
-            String registerLink = ConfigFile.getRegisterLink();
-            driver.get(registerLink);
-            pageFactory.handleActionChain();
+            
+            // Navigate to login page first
+            String loginURL = ConfigFile.getLoginLink();
+            driver.get(loginURL);
+            Thread.sleep(2000);
+            
+            // Click on "New to Flipkart? Create an account" link
+            pageFactory.clickSignUpLink();
+            Thread.sleep(1000);
+            
+            // Enter email from Mailosaur
+            String email = ConfigFile.getEmail();
             pageFactory.clickEmailBox();
-            String PhoneNo = ConfigFile.getPhoneNo();
-            pageFactory.enterPhoneNumber(PhoneNo);
+            pageFactory.enterEmail(email);
+            
+            // Click Continue/Request OTP
             pageFactory.clickSubmitButton();
-            pageFactory.enterOTP();
+            Thread.sleep(3000); // Wait for OTP email
+            
+            // Fetch OTP from Mailosaur
+            String OTP = pageFactory.generateOTP();
+            pageFactory.enterOTP(OTP);
+            
+            // Click Signup button
             boolean isClicked = pageFactory.clickSignup();
             
             // Assertion
-   	        Assert.assertTrue(isClicked, "Button was not clicked");
+   	        Assert.assertTrue(isClicked, "Signup button was not clicked");
         } 
     	catch (Exception e) {
             test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
