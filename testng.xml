@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flipkart Test Suite" parallel="false">
+    
+    <!-- Site Launch Tests -->
+    <test name="Site Launch Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.SiteLaunchTests"/>
+        </classes>
+    </test>
+    
+    <!-- Authentication Tests -->
+    <test name="Authentication Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.AuthenticationTests"/>
+        </classes>
+    </test>
+    
+    <!-- Product Search Tests -->
+    <test name="Product Search Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.ProductSearchTests"/>
+        </classes>
+    </test>
+    
+    <!-- Product Filter Tests -->
+    <test name="Product Filter Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.ProductFilterTests"/>
+        </classes>
+    </test>
+    
+    <!-- Cart and Order Tests -->
+    <test name="Cart and Order Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.CartAndOrderTests"/>
+        </classes>
+    </test>
+    
+    <!-- Category Browsing Tests -->
+    <test name="Category Browsing Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.CategoryBrowsingTests"/>
+        </classes>
+    </test>
+    
+    <!-- Location Tests -->
+    <test name="Location Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.LocationTests"/>
+        </classes>
+    </test>
+    
+    <!-- Product Details Tests -->
+    <test name="Product Details Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.ProductDetailsTests"/>
+        </classes>
+    </test>
+    
+    <!-- Flight Booking Tests -->
+    <test name="Flight Booking Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.FlightBookingTests"/>
+        </classes>
+    </test>
+
+</suite>
