@@ -15,11 +15,11 @@ import pages.FlipkartSearchBox;
 public class ProductSearchTests extends BaseTest {
 
 	@Test
-	public void clickOnProduct(ITestContext context) throws InterruptedException {
-		context.setAttribute("testCaseName", "clickOnProduct");
-		test = extent.createTest("checkProductClickHome", "This test case is for clicking a product on Homepage");
-		test.log(Status.INFO, "This test case is for clicking a product on Homepage");
-		logger.info("Clicking on a product on Homepage");
+	public void clickProductOnHomepage(ITestContext context) throws InterruptedException {
+		context.setAttribute("testCaseName", "clickProductOnHomepage");
+		test = extent.createTest("clickProductOnHomepage", "This test case is for clicking a product directly on Homepage");
+		test.log(Status.INFO, "This test case is for clicking a product directly on Homepage");
+		logger.info("Clicking on a product directly on Homepage");
 		
 		try {
 			// Navigate to homepage first
@@ -28,6 +28,9 @@ public class ProductSearchTests extends BaseTest {
 			
 			FlipkartClickProductHome pageFactory = new FlipkartClickProductHome(driver);
 			boolean isProductClicked = pageFactory.clickOnProduct();
+			
+			// Wait to visually confirm the product was clicked
+			Thread.sleep(3000);
 			
 			// Assertion
 			Assert.assertTrue(isProductClicked, "Product was not clicked successfully");
@@ -38,11 +41,11 @@ public class ProductSearchTests extends BaseTest {
 	}
 
 	@Test
-	public void searchProduct(ITestContext context) throws InterruptedException {
-		context.setAttribute("testCaseName", "searchProduct");
-		test = extent.createTest("searchProduct", "This test case is for searching a product on search-box");
-		test.log(Status.INFO, "This test case is for searching a product on search-box");
-		logger.info("Searching a product on Search-Box");
+	public void searchAndClickProduct(ITestContext context) throws InterruptedException {
+		context.setAttribute("testCaseName", "searchAndClickProduct");
+		test = extent.createTest("searchAndClickProduct", "This test case is for searching a product and clicking on it");
+		test.log(Status.INFO, "This test case is for searching a product and clicking on it");
+		logger.info("Searching a product and clicking on it");
 		
 		try {
 			// Navigate to homepage first
@@ -55,7 +58,8 @@ public class ProductSearchTests extends BaseTest {
 			pageFactory.enterProductName(product);
 			pageFactory.clickSearchButton();
 			boolean isProductClicked = pageFactory.clickProduct();
-			
+			// Wait to visually confirm the product was clicked
+			Thread.sleep(3000);
 			// Assertion
 			Assert.assertTrue(isProductClicked, "Product was not clicked successfully");
 		} catch (Exception e) {

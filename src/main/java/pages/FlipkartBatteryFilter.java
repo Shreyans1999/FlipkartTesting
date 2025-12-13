@@ -34,11 +34,24 @@ public class FlipkartBatteryFilter {
 
     public boolean selectBatteryCapacity() throws InterruptedException {
     	wait.until(ExpectedConditions.elementToBeClickable(batteryCapacity));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", batteryCapacity);
-         batteryCapacity.click();
-         wait.until(ExpectedConditions.elementToBeClickable(batteryCapacity));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", batteryCapacityCheckbox);
-         batteryCapacityCheckbox.click();
-         return true;
+        // Scroll element to center of viewport to avoid sticky header
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", batteryCapacity);
+        Thread.sleep(500); // Wait for scroll to complete
+        try {
+            batteryCapacity.click();
+        } catch (Exception e) {
+            // Fallback to JavaScript click if regular click is intercepted
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", batteryCapacity);
+        }
+        wait.until(ExpectedConditions.elementToBeClickable(batteryCapacityCheckbox));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", batteryCapacityCheckbox);
+        Thread.sleep(500); // Wait for scroll to complete
+        try {
+            batteryCapacityCheckbox.click();
+        } catch (Exception e) {
+            // Fallback to JavaScript click if regular click is intercepted
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", batteryCapacityCheckbox);
+        }
+        return true;
     }
 }
