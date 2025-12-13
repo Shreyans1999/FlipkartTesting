@@ -36,44 +36,6 @@ public class ReadConfigFile {
 			throw new RuntimeException("URL not found in Config File");
 	}
 	
-//	This function returns API-Key
-	public String getAPI_KEY() {
-		String API_KEY = properties.getProperty("API_KEY");
-		if (API_KEY != null)
-			return API_KEY;
-		else
-			throw new RuntimeException("API-KEY not found in Config File");
-	}
-
-//	This function returns Server-ID
-	public String getServerID() {
-		String serverId = properties.getProperty("serverId");
-		if (serverId != null)
-			return serverId;
-		else
-			throw new RuntimeException("Server-ID not found in Config File");
-	}
-	
-	
-//	This function returns Server Domain
-	public String getServerDomain() {
-		String serverDomain = properties.getProperty("serverDomain");
-		if (serverDomain != null)
-			return serverDomain;
-		else
-			throw new RuntimeException("Server-Domain not found in Config File");
-	}
-	
-	
-//	This function returns Server Domain
-	public String getEmail() {
-		String email = properties.getProperty("email");
-		if (email != null)
-			return email;
-		else
-			throw new RuntimeException("Email not found in Config File");
-	}
-	
 //	This function return product name
 	public String getProduct() {
 		String product = properties.getProperty("product");
@@ -165,17 +127,6 @@ public class ReadConfigFile {
 			throw new RuntimeException("loginURL not found in Config File");
 	}
 	
-	
-//	This function return Register link
-	public String getRegisterLink() {
-		String registerLink = properties.getProperty("registerLink");
-		if (registerLink != null)
-			return registerLink;
-		else
-			throw new RuntimeException("registerLink not found in Config File");
-	}
-	
-	
 //	This function return Phone number
 	public String getPhoneNo() {
 		String PhoneNo = properties.getProperty("PhoneNo");
@@ -185,3 +136,4 @@ public class ReadConfigFile {
 			throw new RuntimeException("PhoneNo not found in Config File");
 	}
 }
+

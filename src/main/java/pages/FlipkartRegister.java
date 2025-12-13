@@ -36,10 +36,10 @@ public class FlipkartRegister {
 	@FindBy(xpath="//input[contains(@class,'c3Bd2c') and contains(@class,'yXUQVt')]")
 	public WebElement phoneInputBox;
 	
-	@FindBy(xpath="//a[contains(text(),'New to Flipkart')] | //span[contains(text(),'New to Flipkart')]")
+	@FindBy(xpath="//a[contains(text(),'New to Flipkart? Create an account')] | //a[contains(text(),'New to Flipkart')]")
 	public WebElement signUpLink;
 	
-	@FindBy(xpath="//button[contains(text(),'CONTINUE') or contains(text(),'Continue') or contains(text(),'Request OTP')]")
+	@FindBy(xpath="//button[contains(@class,'dSM5Ub')] | //button[.//span[text()='CONTINUE']] | //button[contains(text(),'Continue')]")
 	public WebElement submitButton;
 	
 	@FindBy(xpath="//input[@type='text' and contains(@class,'otp')] | //input[contains(@placeholder,'OTP')] | //input[@maxlength='6']")

@@ -14,8 +14,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -44,7 +43,7 @@ public class BaseTest {
 	protected ExtentTest test;
 	protected boolean isLoggedIn = false;
 
-	@BeforeTest
+	@BeforeMethod
 	@Parameters("browser")
 	public void initializeDriver(@Optional("chrome") String browser) {
 		switch (browser.toLowerCase()) {
@@ -117,7 +116,6 @@ public class BaseTest {
 		return performLogin(15);
 	}
 
-	@AfterMethod
 	public void getTestResult(ITestResult result, ITestContext context) throws IOException {
 		String testCaseName = (String) context.getAttribute("testCaseName");
 
@@ -135,8 +133,9 @@ public class BaseTest {
 		}
 	}
 
-	@AfterTest
-	public void tearDownTest() {
+	@AfterMethod
+	public void tearDownTest(ITestResult result, ITestContext context) throws IOException {
+		getTestResult(result, context);
 		if (driver != null) {
 			driver.quit();
 		}
