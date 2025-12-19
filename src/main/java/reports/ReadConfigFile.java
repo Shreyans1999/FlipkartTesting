@@ -9,20 +9,26 @@ import java.io.IOException;
 public class ReadConfigFile {
 	
 	Properties properties;
-	String path = "C:\\Users\\ssaklecha\\eclipse\\FlipkartTesting\\src\\main\\resources\\Properties\\Config.properties";
 
-//	Basic Setup for Reading Config File
+//	Basic Setup for Reading Config File - Dynamically finds Config.properties
 	public ReadConfigFile() {
 		properties = new Properties();
 		try {
-		FileInputStream fis = new FileInputStream(path);
-		try {
+			// Use ClassLoader to dynamically find the Config.properties file in resources
+			// This works on any system regardless of the project location
+			FileInputStream fis = new FileInputStream(
+				getClass().getClassLoader().getResource("Properties/Config.properties").getPath()
+			);
 			properties.load(fis);
-		} catch (IOException e) {
+			fis.close();
+		} catch (FileNotFoundException e) {
+			System.err.println("Config.properties file not found in resources/Properties/");
 			e.printStackTrace();
-		}
-		} 
-		catch(FileNotFoundException e){
+		} catch (IOException e) {
+			System.err.println("Error reading Config.properties file");
+			e.printStackTrace();
+		} catch (NullPointerException e) {
+			System.err.println("Config.properties resource not found. Ensure it's in src/main/resources/Properties/");
 			e.printStackTrace();
 		}
 	}

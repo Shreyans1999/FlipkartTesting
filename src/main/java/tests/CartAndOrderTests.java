@@ -41,36 +41,36 @@ public class CartAndOrderTests extends BaseTest {
 		}
 	}
 
-//	@Test
-//	public void addToCart(ITestContext context) throws InterruptedException {
-//		context.setAttribute("testCaseName", "addToCart");
-//		test = extent.createTest("addToCart", "This test case is to Add Product to cart");
-//		test.log(Status.INFO, "This test case is to Add Product to cart");
-//		logger.info("Adding a laptop product into cart");
-//		
-//		try {
-//			// Navigate to a product page first
-//			String productLink = ConfigFile.getProductLink();
-//			driver.get(productLink);
-//			
-//			// Wait to see the product page
-//			System.out.println(">> Product page loaded - waiting 5 seconds to view...");
-//			Thread.sleep(5000);
-//			
-//			FlipkartAddToCart pageFactory = new FlipkartAddToCart(driver);
-//			boolean isClicked = pageFactory.clickAddToCartButton();
-//			
-//			// Wait to see the cart page after adding product
-//			System.out.println(">> Product added to cart - waiting 5 seconds to view cart...");
-//			Thread.sleep(5000);
-//			
-//			// Assertion
-//			Assert.assertTrue(isClicked, "Button was not clicked");
-//		} catch (Exception e) {
-//			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
-//			throw e;
-//		}
-//	}
+	@Test
+	public void addToCart(ITestContext context) throws InterruptedException {
+		context.setAttribute("testCaseName", "addToCart");
+		test = extent.createTest("addToCart", "This test case is to Add Product to cart");
+		test.log(Status.INFO, "This test case is to Add Product to cart");
+		logger.info("Adding a laptop product into cart");
+		
+		try {
+			// Navigate to a product page first
+			String productLink = ConfigFile.getProductLink();
+			driver.get(productLink);
+			
+			// Wait to see the product page
+			System.out.println(">> Product page loaded - waiting 5 seconds to view...");
+			Thread.sleep(5000);
+			
+			FlipkartAddToCart pageFactory = new FlipkartAddToCart(driver);
+			boolean isClicked = pageFactory.clickAddToCartButton();
+			
+			// Wait to see the cart page after adding product
+			System.out.println(">> Product added to cart - waiting 5 seconds to view cart...");
+			Thread.sleep(5000);
+			
+			// Assertion
+			Assert.assertTrue(isClicked, "Button was not clicked");
+		} catch (Exception e) {
+			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
+			throw e;
+		}
+	}
 
 	@Test
 	public void placeOrder(ITestContext context) throws InterruptedException {
@@ -98,31 +98,31 @@ public class CartAndOrderTests extends BaseTest {
 		}
 	}
 
-//	@Test(dependsOnMethods = "addToCart")
-//	public void checkMyCart(ITestContext context) throws InterruptedException {
-//		context.setAttribute("testCaseName", "checkMyCart");
-//		test = extent.createTest("checkMyCart", "This test case is to check my Cart");
-//		test.log(Status.INFO, "This test case is to check my Cart");
-//		logger.info("Checking my Flipkart Cart");
-//		
-//		try {
-//			// Navigate to homepage first
-//			String URL = ConfigFile.getURL();
-//			driver.get(URL);
-//			
-//			FlipkartCheckCart pageFactory = new FlipkartCheckCart(driver);
-//			pageFactory.clickCartButton();
-//			
-//			// Assertion - verify we're on the cart page
-//			String expectedText = "Cart";
-//			String actualText = pageFactory.getHeading();
-//			Assert.assertTrue(actualText.toLowerCase().contains(expectedText.toLowerCase()), 
-//				"Cart page not loaded. Got: " + actualText);
-//		} catch (Exception e) {
-//			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
-//			throw e;
-//		}
-//	}
+	@Test
+	public void checkMyCart(ITestContext context) throws InterruptedException {
+		context.setAttribute("testCaseName", "checkMyCart");
+		test = extent.createTest("checkMyCart", "This test case is to check my Cart");
+		test.log(Status.INFO, "This test case is to check my Cart");
+		logger.info("Checking my Flipkart Cart");
+		
+		try {
+			// Navigate to homepage first
+			String URL = ConfigFile.getURL();
+			driver.get(URL);
+			
+			FlipkartCheckCart pageFactory = new FlipkartCheckCart(driver);
+			pageFactory.clickCartButton();
+			
+			// Assertion - verify we're on the cart page
+			String expectedText = "Cart";
+			String actualText = pageFactory.getHeading();
+			Assert.assertTrue(actualText.toLowerCase().contains(expectedText.toLowerCase()), 
+				"Cart page not loaded. Got: " + actualText);
+		} catch (Exception e) {
+			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
+			throw e;
+		}
+	}
 
 	/**
 	 * Override @AfterMethod to NOT quit browser between dependent tests.

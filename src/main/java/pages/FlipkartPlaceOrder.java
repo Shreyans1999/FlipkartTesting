@@ -166,48 +166,111 @@ public class FlipkartPlaceOrder {
 	}
 	
 	/**
-	 * Step 4: Edit the Address field - add some random text
+	 * Step 4: Edit the Address field (Area and Street) - add some random text
+	 * Note: This specifically targets the "Address (Area and Street)" field, 
+	 * NOT the City/District/Town field
 	 */
 	public void editAddressField() throws InterruptedException {
-		System.out.println("Step 4: Editing Address field...");
+		System.out.println("Step 4: Editing Address (Area and Street) field...");
 		Thread.sleep(1000);
 		
-		// Find the Address (Area and Street) field
+		// Find the Address (Area and Street) field specifically
+		// Based on DOM: textarea with name="addressLine1", autocomplete="street-address"
 		String[] addressFieldXpaths = {
-			"//input[@name='addressLine1']",
-			"//textarea[contains(@placeholder,'Address')]",
-			"//input[contains(@placeholder,'Address')]",
-			"//label[contains(text(),'Address')]/following::input[1]",
-			"//label[contains(text(),'Address')]/following::textarea[1]",
-			"(//div[contains(text(),'Address')]//following::textarea)[1]",
-			"(//div[contains(text(),'Address')]//following::input)[1]"
+			// Exact match using name attribute (from DOM inspection)
+			"//textarea[@name='addressLine1']",
+			// Match by autocomplete attribute
+			"//textarea[@autocomplete='street-address']",
+			// Match by Flipkart's specific classes
+			"//textarea[contains(@class,'lWqG58')]",
+			// Match by label for attribute
+			"//label[contains(text(),'Address (Area and Street)')]/preceding-sibling::textarea",
+			"//label[@for='addressLine1']/preceding-sibling::textarea",
+			// Try finding textarea near the Address label
+			"//label[contains(text(),'Address') and contains(text(),'Street')]/parent::div//textarea",
+			"//div[contains(.,'Address (Area and Street)')]//textarea[@name='addressLine1']",
+			// Fallback patterns
+			"//textarea[@cols='10'][@tabindex='5']",
+			"//textarea[contains(@class,'afiehA')]"
 		};
 		
 		WebElement addressField = null;
 		for (String xpath : addressFieldXpaths) {
 			try {
 				addressField = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-				break;
+				if (addressField != null) {
+					System.out.println("Found Address field with xpath: " + xpath);
+					break;
+				}
 			} catch (Exception e) {
 				// Try next pattern
 			}
 		}
 		
+		// Fallback: Find the correct field by checking the nearby label text
 		if (addressField == null) {
-			// Try to find any textarea on the page
+			System.out.println("Primary selectors failed, trying to find Address field by structure...");
 			try {
-				addressField = driver.findElement(By.xpath("//textarea"));
+				// Find all form groups/divs that contain inputs
+				java.util.List<WebElement> allInputs = driver.findElements(By.tagName("input"));
+				java.util.List<WebElement> allTextareas = driver.findElements(By.tagName("textarea"));
+				
+				// Combine inputs and textareas
+				java.util.List<WebElement> allFields = new java.util.ArrayList<>();
+				allFields.addAll(allInputs);
+				allFields.addAll(allTextareas);
+				
+				for (WebElement field : allFields) {
+					try {
+						// Check if this field's parent or ancestor contains "Address (Area and Street)" label
+						WebElement parent = field.findElement(By.xpath("./ancestor::div[contains(.,'Address') and contains(.,'Area') and contains(.,'Street')][1]"));
+						if (parent != null) {
+							// Make sure it's not the City field
+							String parentText = parent.getText();
+							if (!parentText.contains("City") && !parentText.contains("Town") && !parentText.contains("District")) {
+								addressField = field;
+								System.out.println("Found Address (Area and Street) field via structure analysis");
+								break;
+							}
+						}
+					} catch (Exception e) {
+						// This field doesn't have the right parent, continue
+					}
+				}
+			} catch (Exception e) {
+				System.out.println("Fallback approach failed: " + e.getMessage());
+			}
+		}
+		
+		// Last resort: Find textarea (Address fields are often textareas while City is an input)
+		if (addressField == null) {
+			try {
+				// Look for the first textarea that's likely the address field
+				java.util.List<WebElement> textareas = driver.findElements(By.tagName("textarea"));
+				if (!textareas.isEmpty()) {
+					addressField = textareas.get(0);
+					System.out.println("Using first textarea as Address field");
+				}
 			} catch (Exception e) {
 				System.out.println("Warning: Address field not found, skipping edit");
 				return;
 			}
 		}
 		
+		if (addressField == null) {
+			System.out.println("Warning: Address (Area and Street) field not found, skipping edit");
+			return;
+		}
+		
 		// Clear and add new text
 		String existingAddress = addressField.getAttribute("value");
+		if (existingAddress == null) {
+			existingAddress = addressField.getText();
+		}
 		addressField.clear();
-		addressField.sendKeys(existingAddress + ", ABC Colony");
-		System.out.println("Address field updated with 'ABC Colony'");
+		String newAddress = existingAddress + ", ABC Colony";
+		addressField.sendKeys(newAddress);
+		System.out.println("Address (Area and Street) field updated: '" + existingAddress + "' -> '" + newAddress + "'");
 		
 		Thread.sleep(1000);
 	}
@@ -301,26 +364,84 @@ public class FlipkartPlaceOrder {
 	 */
 	public void clickContinueButton() throws InterruptedException {
 		System.out.println("Step 7: Clicking Continue button...");
+		Thread.sleep(2000);
+		
+		// Scroll down to reveal the Continue button
+		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 400)");
 		Thread.sleep(1000);
 		
 		String[] continueButtonXpaths = {
 			"//button[contains(text(),'CONTINUE')]",
 			"//button[contains(text(),'Continue')]",
 			"//span[contains(text(),'CONTINUE')]/parent::button",
-			"//button[@type='submit']"
+			"//span[text()='CONTINUE']/ancestor::button",
+			"//span[contains(text(),'CONTINUE')]/ancestor::*[self::button or @role='button']",
+			"//*[contains(@class,'continue') or contains(@class,'Continue')]//button",
+			"//button[contains(@class,'continue') or contains(@class,'Continue')]",
+			"//div[contains(text(),'CONTINUE')]/parent::button",
+			"//button[@type='submit']",
+			"//*[@role='button'][contains(.,'CONTINUE')]",
+			"//button[.//span[contains(text(),'CONTINUE')]]"
 		};
 		
 		WebElement continueButton = null;
 		for (String xpath : continueButtonXpaths) {
 			try {
 				continueButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-				break;
+				if (continueButton != null) {
+					System.out.println("Found Continue button with xpath: " + xpath);
+					break;
+				}
 			} catch (Exception e) {
 				// Try next pattern
 			}
 		}
 		
+		// Fallback: Try to find any button with CONTINUE text
 		if (continueButton == null) {
+			System.out.println("Primary selectors failed, trying fallback approach...");
+			try {
+				java.util.List<WebElement> allButtons = driver.findElements(By.tagName("button"));
+				for (WebElement btn : allButtons) {
+					String btnText = btn.getText().toUpperCase();
+					if (btnText.contains("CONTINUE")) {
+						continueButton = btn;
+						System.out.println("Found Continue button via fallback: " + btnText);
+						break;
+					}
+				}
+			} catch (Exception e) {
+				System.out.println("Fallback approach also failed: " + e.getMessage());
+			}
+		}
+		
+		// Second fallback: Try CSS selectors
+		if (continueButton == null) {
+			System.out.println("Trying CSS selector fallback...");
+			String[] cssSelectors = {
+				"button._2KpZ6l._2U9uOA._3v1-ww",
+				"button._2KpZ6l._2U9uOA",
+				"button[type='submit']",
+				".continue-btn",
+				"button._2KpZ6l"
+			};
+			
+			for (String css : cssSelectors) {
+				try {
+					continueButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(css)));
+					if (continueButton != null) {
+						System.out.println("Found Continue button with CSS: " + css);
+						break;
+					}
+				} catch (Exception e) {
+					// Try next pattern
+				}
+			}
+		}
+		
+		if (continueButton == null) {
+			// Log page source to help debug
+			System.out.println("Warning: Continue button not found. Current URL: " + driver.getCurrentUrl());
 			throw new RuntimeException("Continue button not found!");
 		}
 		
