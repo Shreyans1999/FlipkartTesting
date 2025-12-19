@@ -35,11 +35,27 @@ public class FlipkartChangePincode {
 	
 	
 	public void enterPincode(String pincode) throws InterruptedException {
-		Thread.sleep(1000);
+		// Wait to see the page load
+		Thread.sleep(2000);
+		
 		wait.until(ExpectedConditions.elementToBeClickable(pincodeBox));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", pincodeBox);
+		
+		// Wait to see the pincode box highlighted
+		Thread.sleep(1500);
+		
+		// Clear any existing value and enter new pincode
+		pincodeBox.clear();
 		pincodeBox.sendKeys(pincode);
+		
+		// Wait to see the entered pincode
+		Thread.sleep(1500);
+		
+		// Press Enter to submit
 		pincodeBox.sendKeys(Keys.RETURN);
+		
+		// Wait to see the delivery result
+		Thread.sleep(2000);
 	}
 	
 	public String getExpectedText() {
