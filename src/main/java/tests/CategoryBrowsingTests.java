@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 import pages.FlipkartFurnitureProducts;
-import pages.FlipkartGroceryPage;
+import pages.FlipkartBeautyFoodPage;
 import pages.FlipkartMenApparel;
 import pages.FlipkartOfferZonePage;
 
@@ -16,51 +16,77 @@ import pages.FlipkartOfferZonePage;
  */
 public class CategoryBrowsingTests extends BaseTest {
 
-	@Test
-	public void checkMenTshirts(ITestContext context) throws InterruptedException {
-		context.setAttribute("testCaseName", "checkMenTshirts");
-		test = extent.createTest("checkMenTshirts", "This test case is to check Men T-Shirts products");
-		test.log(Status.INFO, "This test case is to check Men T-Shirts products");
-		logger.info("Checking Men T-Shirts products");
+	 @Test
+	 public void checkMenTshirts(ITestContext context) throws InterruptedException {
+	 	context.setAttribute("testCaseName", "checkMenTshirts");
+	 	test = extent.createTest("checkMenTshirts", "This test case is to check Men T-Shirts products");
+	 	test.log(Status.INFO, "This test case is to check Men T-Shirts products");
+	 	logger.info("Checking Men T-Shirts products");
 		
-		try {
-			// Navigate to homepage first
-			String URL = ConfigFile.getURL();
-			driver.get(URL);
+	 	try {
+	 		// Navigate to homepage first
+	 		String URL = ConfigFile.getURL();
+	 		driver.get(URL);
 			
-			FlipkartMenApparel pageFactory = new FlipkartMenApparel(driver);
-			pageFactory.navigateToTshirts();
+	 		FlipkartMenApparel pageFactory = new FlipkartMenApparel(driver);
+	 		pageFactory.navigateToTshirts();
 			
-			// Assertion
-			String expectedText = "Men's T Shirts";
-			String actualText = pageFactory.getHeading();
-			Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
-			test.log(Status.PASS, "Successfully navigated to Men's T-Shirts page");
-		} catch (Exception e) {
-			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
-			throw e;
-		}
-	}
+	 		// Assertion
+	 		String expectedText = "Men's T Shirts";
+	 		String actualText = pageFactory.getHeading();
+	 		Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
+	 		test.log(Status.PASS, "Successfully navigated to Men's T-Shirts page");
+	 	} catch (Exception e) {
+	 		test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
+	 		throw e;
+	 	}
+	 }
 
-	@Test
-	public void checkFurniture(ITestContext context) throws InterruptedException {
-		context.setAttribute("testCaseName", "checkFurniture");
-		test = extent.createTest("checkFurniture", "This test case is to check furniture products");
-		test.log(Status.INFO, "This test case is to check furniture products");
-		logger.info("Checking Furniture products");
+	 @Test
+	 public void checkFurniture(ITestContext context) throws InterruptedException {
+	 	context.setAttribute("testCaseName", "checkFurniture");
+	 	test = extent.createTest("checkFurniture", "This test case is to check furniture products");
+	 	test.log(Status.INFO, "This test case is to check furniture products");
+	 	logger.info("Checking Furniture products");
 		
-		try {
-			// Navigate to homepage first
-			String URL = ConfigFile.getURL();
-			driver.get(URL);
+	 	try {
+	 		// Navigate to homepage first
+	 		String URL = ConfigFile.getURL();
+	 		driver.get(URL);
 			
 			FlipkartFurnitureProducts pageFactory = new FlipkartFurnitureProducts(driver);
-			pageFactory.checkBlankets();
+	 		pageFactory.checkBlankets();
+			
+	 		// Assertion
+	 		String expectedText = "Blankets";
+	 		String actualText = pageFactory.getHeading();
+	 		Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
+	 	} catch (Exception e) {
+	 		test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
+	 		throw e;
+	 	}
+	 }
+
+	@Test
+	public void checkBeautyFoodChocolates(ITestContext context) throws InterruptedException {
+		context.setAttribute("testCaseName", "checkBeautyFoodChocolates");
+		test = extent.createTest("checkBeautyFoodChocolates", "This test case is to check Chocolates under Beauty & Food section");
+		test.log(Status.INFO, "This test case is to check Chocolates under Beauty & Food section");
+		logger.info("Checking Chocolates under Beauty & Food section");
+		
+		try {
+			// Navigate to homepage first
+			String URL = ConfigFile.getURL();
+			driver.get(URL);
+			
+			FlipkartBeautyFoodPage beautyFoodPage = new FlipkartBeautyFoodPage(driver);
+			beautyFoodPage.navigateToChocolates();
 			
 			// Assertion
-			String expectedText = "Blankets";
-			String actualText = pageFactory.getHeading();
+			String expectedText = "Chocolates";
+			String actualText = beautyFoodPage.getHeading();
 			Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
+			test.log(Status.PASS, "Successfully navigated to Chocolates page");
 		} catch (Exception e) {
 			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
 			throw e;
@@ -86,29 +112,6 @@ public class CategoryBrowsingTests extends BaseTest {
 //			
 //			// Assertion
 //			String expectedText = "Sports Casual Shoes Women's Footwear";
-//			String actualText = pageFactory.getHeading();
-//			Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
-//		} catch (Exception e) {
-//			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
-//			throw e;
-//		}
-//	}
-//
-//	@Test
-//	public void checkGrocerySection(ITestContext context) throws InterruptedException {
-//		context.setAttribute("testCaseName", "checkGrocerySection");
-//		test = extent.createTest("checkGrocerySection", "This test case is to check Grocery Store of Flipkart");
-//		test.log(Status.INFO, "This test case is to check Grocery Store of Flipkart");
-//		logger.info("Checking Grocery Section of Flipkart");
-//		
-//		try {
-//			FlipkartGroceryPage pageFactory = new FlipkartGroceryPage(driver);
-//			String groceryLink = ConfigFile.getGroceryLink();
-//			driver.get(groceryLink);
-//			pageFactory.clickGrocery();
-//			
-//			// Assertion
-//			String expectedText = "Vermicelli";
 //			String actualText = pageFactory.getHeading();
 //			Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
 //		} catch (Exception e) {
