@@ -16,24 +16,33 @@ public class FlipkartMenApparel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//span[text()=\"Men\"]")
-	private WebElement men;
+	@FindBy(xpath="//span[text()=\"Fashion\"]")
+	private WebElement fashion;
 	
-	@FindBy(xpath = "//a[@title=\"Jackets\"]")
-    private WebElement jackets;
+	@FindBy(xpath="//a[text()=\"Men's Top Wear\"]")
+	private WebElement mensTopWear;
 	
-	@FindBy(xpath="(//h1[text()=\"Men's Jackets\"])")
-	private WebElement heading;
+	@FindBy(xpath = "//a[text()=\"Men's T-Shirts\"]")
+    private WebElement tshirts;
 	
-	public void handleMenApparelAction() throws InterruptedException {
+	@FindBy(xpath="//h1[contains(text(),\"Men's T Shirts\")]")
+	private WebElement tshirtsHeading;
+	
+	public void navigateToTshirts() throws InterruptedException {
 		Actions actions = new Actions(driver);
-        actions.moveToElement(men).perform();
-        jackets.click();
+		// Hover on Fashion dropdown
+        actions.moveToElement(fashion).perform();
+        Thread.sleep(500);
+        // Hover on Men's Top Wear submenu
+        actions.moveToElement(mensTopWear).perform();
+        Thread.sleep(500);
+        // Click on Men's T-Shirts
+        tshirts.click();
 		Thread.sleep(2000);
 	}
 	
 	public String getHeading() {
-		return heading.getText();
+		return tshirtsHeading.getText();
 	}
    
 }
