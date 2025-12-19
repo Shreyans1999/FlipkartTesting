@@ -17,17 +17,26 @@ public class FlipkartFurnitureProducts {
 	}
 	
 	@FindBy(xpath="//span[text()=\"Home & Furniture\"]")
-	private WebElement furnitures;
+	private WebElement homeAndFurniture;
 	
-	@FindBy(xpath = "//a[@title=\"Blankets\"]")
+	@FindBy(xpath="//a[text()=\"Home Furnishings\"]")
+	private WebElement homeFurnishings;
+	
+	@FindBy(xpath = "//a[text()=\"Blankets\"]")
     private WebElement blankets;
 	
-	@FindBy(xpath="(//h1[text()=\"Blankets\"])")
+	@FindBy(xpath="//h1[contains(text(),\"Blankets\")]")
 	private WebElement heading;
 	
 	public void checkBlankets() throws InterruptedException {
 		Actions actions = new Actions(driver);
-        actions.moveToElement(furnitures).perform();
+		// Hover on Home & Furniture dropdown
+        actions.moveToElement(homeAndFurniture).perform();
+        Thread.sleep(500);
+        // Hover on Home Furnishings submenu
+        actions.moveToElement(homeFurnishings).perform();
+        Thread.sleep(500);
+        // Click on Blankets
         blankets.click();
 		Thread.sleep(2000);
 	}

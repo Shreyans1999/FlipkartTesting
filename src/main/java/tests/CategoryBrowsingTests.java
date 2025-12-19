@@ -42,31 +42,31 @@ public class CategoryBrowsingTests extends BaseTest {
 		}
 	}
 
-//	@Test
-//	public void checkFurniture(ITestContext context) throws InterruptedException {
-//		context.setAttribute("testCaseName", "checkFurniture");
-//		test = extent.createTest("checkFurniture", "This test case is to check furniture products");
-//		test.log(Status.INFO, "This test case is to check furniture products");
-//		logger.info("Checking Furniture products");
-//		
-//		try {
-//			// Navigate to homepage first
-//			String URL = ConfigFile.getURL();
-//			driver.get(URL);
-//			
-//			FlipkartFurnitureProducts pageFactory = new FlipkartFurnitureProducts(driver);
-//			pageFactory.checkBlankets();
-//			
-//			// Assertion
-//			String expectedText = "Blankets";
-//			String actualText = pageFactory.getHeading();
-//			Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
-//		} catch (Exception e) {
-//			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
-//			throw e;
-//		}
-//	}
-//
+	@Test
+	public void checkFurniture(ITestContext context) throws InterruptedException {
+		context.setAttribute("testCaseName", "checkFurniture");
+		test = extent.createTest("checkFurniture", "This test case is to check furniture products");
+		test.log(Status.INFO, "This test case is to check furniture products");
+		logger.info("Checking Furniture products");
+		
+		try {
+			// Navigate to homepage first
+			String URL = ConfigFile.getURL();
+			driver.get(URL);
+			
+			FlipkartFurnitureProducts pageFactory = new FlipkartFurnitureProducts(driver);
+			pageFactory.checkBlankets();
+			
+			// Assertion
+			String expectedText = "Blankets";
+			String actualText = pageFactory.getHeading();
+			Assert.assertTrue(actualText.contains(expectedText), "Expected text not found: " + expectedText);
+		} catch (Exception e) {
+			test.log(Status.FAIL, "Exception occurred: " + e.getMessage());
+			throw e;
+		}
+	}
+
 //	@Test
 //	public void checkOfferZone(ITestContext context) throws InterruptedException {
 //		context.setAttribute("testCaseName", "checkOfferZone");
