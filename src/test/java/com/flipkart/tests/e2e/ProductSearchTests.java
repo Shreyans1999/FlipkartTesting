@@ -12,7 +12,7 @@ import com.flipkart.tests.base.BaseTest;
  */
 public class ProductSearchTests extends BaseTest {
 
-    @Test(groups = {"smoke", "search"})
+    @Test(groups = {"e2e", "search"})
     public void clickProductOnHomepage() throws InterruptedException {
         logger.info("Clicking on a product directly on Homepage");
         
@@ -28,7 +28,7 @@ public class ProductSearchTests extends BaseTest {
         logger.info("Product clicked successfully");
     }
 
-    @Test(groups = {"smoke", "search"})
+    @Test(groups = {"e2e", "search"})
     public void searchAndClickProduct() throws InterruptedException {
         logger.info("Searching a product and clicking on it");
         

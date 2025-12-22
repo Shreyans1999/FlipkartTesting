@@ -25,7 +25,7 @@ public class FlipkartPlaceOrder extends BasePage {
 	 */
 	public void clickBuyNowButton() throws InterruptedException {
 		System.out.println("Step 1: Clicking Buy Now button...");
-		pause(2000);
+		pause(500);
 		
 		// Maximize window and scroll to reveal button
 		maximizeWindow();
@@ -59,7 +59,7 @@ public class FlipkartPlaceOrder extends BasePage {
 		safeClick(buyNowButton);
 		
 		System.out.println("Buy Now button clicked! Waiting for checkout page...");
-		pause(3000);
+		pause(1500);
 		
 		// Verify we're on checkout page
 		String currentUrl = getCurrentUrl();
@@ -75,7 +75,7 @@ public class FlipkartPlaceOrder extends BasePage {
 	 */
 	public void clickChangeButton() throws InterruptedException {
 		System.out.println("Step 2: Clicking Change button for Delivery Address...");
-		pause(1000);
+		pause(500);
 		
 		// Find the CHANGE button in the Delivery Address section
 		String[] changeButtonXpaths = {
@@ -113,7 +113,7 @@ public class FlipkartPlaceOrder extends BasePage {
 			System.out.println("Change button clicked!");
 		}
 		
-		pause(2000);
+		pause(1000);
 	}
 	
 	/**
@@ -121,7 +121,7 @@ public class FlipkartPlaceOrder extends BasePage {
 	 */
 	public void clickEditButton() throws InterruptedException {
 		System.out.println("Step 3: Clicking Edit button...");
-		pause(1000);
+		pause(500);
 		
 		String[] editButtonXpaths = {
 			"//span[text()='EDIT']",
@@ -146,7 +146,7 @@ public class FlipkartPlaceOrder extends BasePage {
 		
 		clickWithJS(editButton);
 		System.out.println("Edit button clicked!");
-		pause(2000);
+		pause(1000);
 	}
 	
 	/**
@@ -154,7 +154,7 @@ public class FlipkartPlaceOrder extends BasePage {
 	 */
 	public void editAddressField() throws InterruptedException {
 		System.out.println("Step 4: Editing Address (Area and Street) field...");
-		pause(1000);
+		pause(500);
 		
 		// Find the Address (Area and Street) field specifically
 		String[] addressFieldXpaths = {
@@ -211,7 +211,7 @@ public class FlipkartPlaceOrder extends BasePage {
 		addressField.sendKeys(newAddress);
 		System.out.println("Address (Area and Street) field updated: '" + existingAddress + "' -> '" + newAddress + "'");
 		
-		pause(1000);
+		pause(500);
 	}
 	
 	/**
@@ -222,7 +222,7 @@ public class FlipkartPlaceOrder extends BasePage {
 		
 		// Scroll down 500 pixels
 		scrollBy(0, 500);
-		pause(1000);
+		pause(500);
 		
 		String[] saveButtonXpaths = {
 			"//button[contains(text(),'SAVE AND DELIVER HERE')]",
