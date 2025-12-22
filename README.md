@@ -13,9 +13,10 @@ A robust, scalable UI test automation framework for Flipkart e-commerce platform
 | TestNG | 7.11.0 | Test Framework |
 | WebDriverManager | 6.3.3 | Driver Management |
 | Log4j 2 | 2.25.2 | Logging |
-| ExtentReports | 5.1.2 | HTML Reporting |
+| **Allure Reports** | **2.29.1** | **Interactive Test Reports** |
 | Apache POI | 5.5.1 | Excel Data Handling |
 | Maven | 3.x | Build & Dependency Management |
+
 
 ---
 
@@ -40,8 +41,8 @@ A robust, scalable UI test automation framework for Flipkart e-commerce platform
 │   │ (Thread-safe driver)│  │    (Singleton)      │              │
 │   └─────────────────────┘  └─────────────────────┘              │
 │                                                                  │
-│   ┌─────────────────────┐  ┌─────────────────────┐              │
 │   │    TestListener     │  │   POJO Models       │              │
+│   │ (Allure Screenshots) │  │ (4 data classes)    │              │
 │   │ (ExtentReports)     │  │ (4 data classes)    │              │
 │   └─────────────────────┘  └─────────────────────┘              │
 └─────────────────────────────────────────────────────────────────┘
@@ -118,7 +119,7 @@ FlipkartTesting/
 │   └── regression/
 │       └── CartAndOrderTests.java       # Login-required order tests
 │
-├── reports/                             # ExtentReports output
+├── reports/                             # Allure reports output
 └── screenshots/                         # Test failure screenshots
 ```
 
@@ -226,17 +227,82 @@ arrivalCity=Delhi
 
 ## Reporting & Logging
 
-### ExtentReports
-- HTML reports generated in `reports/` directory
-- Screenshots auto-captured on test failure
-- Test listener: `com.flipkart.core.listeners.TestListener`
+### Allure Reports (Recommended)
+
+Allure provides beautiful, interactive HTML reports with:
+- Test execution timeline
+- Step-by-step test breakdown  
+- Screenshots on failure
+- Environment information
+- Test categorization
+
+#### Prerequisites
+
+Install Allure CLI (one-time setup):
+
+**macOS:**
+```bash
+brew install allure
+```
+
+**Windows (via Scoop):**
+```bash
+scoop install allure
+```
+
+**Linux:**
+```bash
+sudo apt-get install allure
+```
+
+#### Generate & View Allure Report
+
+```bash
+# Step 1: Run E2E tests (generates allure-results)
+mvn clean test
+
+# Step 2: Generate and open report in browser
+mvn allure:serve
+```
+
+This will:
+1. Generate the HTML report from `target/allure-results`
+2. Start a local web server
+3. Open the report in your default browser
+
+#### Alternative Commands
+
+```bash
+# Generate report without opening browser
+mvn allure:report
+
+# Report will be at: target/allure-report/index.html
+
+# View existing report
+allure open target/allure-report
+```
+
+#### Allure Report Structure
+
+```
+target/
+├── allure-results/          # Raw test results (JSON)
+└── allure-report/           # Generated HTML report
+    └── index.html           # Open this in browser
+```
+
+> **Note:** Allure reports are generated only for E2E tests (`testng.xml`). Login-required tests in `testng-regression.xml` are excluded since they require manual OTP entry.
+
+---
 
 ### Log4j 2
+
 - Logger configured at class level
 - Log levels: INFO, WARN, ERROR, DEBUG
 - Usage in tests: `logger.info("Test step description")`
 
 ### Screenshots
+
 - Location: `screenshots/` directory
 - Captured on test failures
 - Utility: `ScreenshotUtils.java`
@@ -283,7 +349,8 @@ arrivalCity=Delhi
 | Multi-browser Support | Chrome, Firefox, Edge, Headless modes |
 | Parallel Execution | ThreadLocal driver, 4 threads |
 | Screenshot on Failure | TestListener auto-capture |
-| HTML Reports | ExtentReports integration |
+| **Allure Reports** | **Interactive HTML with timeline & steps** |
+| **Allure Reports** | **Interactive HTML with timeline & steps** |
 | Data-Driven Ready | Apache POI for Excel support |
 | Configurable | External config.properties |
 | Login Flow | Manual OTP entry support |
