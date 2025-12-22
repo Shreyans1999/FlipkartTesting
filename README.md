@@ -1,5 +1,7 @@
 # Flipkart UI Automation Framework
 
+[![CI Tests](https://github.com/Shreyans1999/FlipkartTesting/actions/workflows/test.yml/badge.svg)](https://github.com/Shreyans1999/FlipkartTesting/actions/workflows/test.yml)
+
 A robust, scalable UI test automation framework for Flipkart e-commerce platform built with Java, Selenium WebDriver, and TestNG.
 
 ---
