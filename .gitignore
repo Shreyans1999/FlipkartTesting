@@ -12,6 +12,7 @@ test-output/
 # ===================
 # ExtentReports (generated test reports)
 # ===================
+reports/
 **/ExtentReport.html
 **/ExtentReport_*.html
 **/extentreports/

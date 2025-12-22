@@ -138,7 +138,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>theMainClass</mainClass>
+							<!-- No main class needed for test project -->
 						</manifest>
 					</archive>
 				</configuration>
