@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ master, main ]
   workflow_dispatch:  # Allows manual trigger
+  schedule:
+    # Runs daily at 12:00 AM IST (18:30 UTC previous day)
+    - cron: '30 18 * * *'
 
 # Required permissions for GitHub Pages deployment
 permissions:
