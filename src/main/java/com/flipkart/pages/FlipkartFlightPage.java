@@ -1,15 +1,11 @@
 package com.flipkart.pages;
 
-import java.time.Duration;
 import java.time.LocalDate;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Page Object for Flipkart Flight Booking page.

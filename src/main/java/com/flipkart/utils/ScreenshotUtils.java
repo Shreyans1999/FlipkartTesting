@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
