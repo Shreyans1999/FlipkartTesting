@@ -18,6 +18,15 @@ reports/
 **/extentreports/
 
 # ===================
+# Allure Reports (generated test reports)
+# ===================
+.allure/
+allure-results/
+allure-report/
+**/allure-results/
+**/allure-report/
+
+# ===================
 # Screenshots (captured during tests)
 # ===================
 **/screenshots/
